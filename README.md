@@ -4,20 +4,11 @@ A Chrome extension that automatically detects quiz questions and answer choices 
 
 ## Installation
 
-1. Download or clone this repository
+1. [Download this repository](https://github.com/gpt-auto/extension/archive/refs/heads/main.zip)
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" by toggling the switch in the top right corner
-4. Click "Load unpacked" and select the folder containing this extension
+4. Click "Load unpacked" and select the repository
 5. The extension should now appear in your Chrome toolbar
-
-## Download from GitHub
-
-You can download this extension directly from GitHub by:
-
-1. Click the green "Code" button at the top of the repository page
-2. Select "Download ZIP" from the dropdown menu
-3. Once downloaded, extract the ZIP file to a folder on your computer
-4. Follow the installation instructions above (steps 2-5) to load the extension in Chrome
 
 ## Username.txt Guide
 
