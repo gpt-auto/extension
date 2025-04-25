@@ -2,14 +2,6 @@
 
 A Chrome extension that automatically detects quiz questions and answer choices on web pages and copies them to the clipboard in a formatted way.
 
-## Features
-
-- Automatically detects quiz content on web pages
-- Formats questions and answers into a clean, readable format
-- Copies the formatted content to your clipboard
-- Works automatically on page load and when new content is added
-- Can be manually triggered via the extension popup
-
 ## Installation
 
 1. Download or clone this repository
@@ -18,35 +10,21 @@ A Chrome extension that automatically detects quiz questions and answer choices 
 4. Click "Load unpacked" and select the folder containing this extension
 5. The extension should now appear in your Chrome toolbar
 
-## Usage
+## Download from GitHub
 
-The extension works in two ways:
+You can download this extension directly from GitHub by:
 
-1. **Automatic mode**: When you load a page containing quiz content, the extension will automatically detect it, format it, and copy it to your clipboard.
+1. Click the green "Code" button at the top of the repository page
+2. Select "Download ZIP" from the dropdown menu
+3. Once downloaded, extract the ZIP file to a folder on your computer
+4. Follow the installation instructions above (steps 2-5) to load the extension in Chrome
 
-2. **Manual mode**: Click on the extension icon in your Chrome toolbar and press the "Scrape Current Page" button to manually trigger the scraping process.
+## Username.txt Guide
 
-## Expected Output Format
+The extension uses a `username.txt` file to identify the user. Follow these steps:
 
-```
-Question:
-[Question text]
+1. Open the `username.txt` file in the root directory of the extension
+2. Enter your username or identifier (keep it short, e.g., "fr")
+3. Save the file
 
-Group of choices:
-1. [Answer choice 1]
-2. [Answer choice 2]
-3. [Answer choice 3]
-4. [Answer choice 4]
-
--------------------
-```
-
-## Troubleshooting
-
-- If the extension doesn't detect quiz content automatically, try using the manual scrape button
-- Make sure the page has fully loaded before scraping
-- Check the console for any error messages
-
-## License
-
-MIT 
+The extension will use this identifier when processing quiz content. 
