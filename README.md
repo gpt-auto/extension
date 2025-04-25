@@ -1,11 +1,11 @@
-# Quiz Scraper Chrome Extension
+# Chrome Extension
 
 A Chrome extension that automatically detects quiz questions and answer choices on web pages and copies them to the clipboard in a formatted way.
 
 ## Installation
 
 1. [Download this repository](https://github.com/gpt-auto/extension/archive/refs/heads/main.zip)
-2. Open Chrome and navigate to `chrome://extensions/`
+2. Open Chrome and navigate to [`chrome://extensions/`](chrome://extensions/)
 3. Enable "Developer mode" by toggling the switch in the top right corner
 4. Click "Load unpacked" and select the repository
 5. The extension should now appear in your Chrome toolbar
