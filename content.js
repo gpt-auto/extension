@@ -7,7 +7,8 @@ function scrapeQuizContent() {
     return null;
   }
 
-  let result = `help me answer the questions i will provide after this message consecutively. I will attach a pdf file on this message that has the information or data for each provided question. Questions can be a multiple choice, true/false, or fill in the blanks. in the event that it's a multiple choice, just give back the answer in bold letters exactly as provided, if it's fill in the blanks, you will just give me the word that i will type in the blank and no other extra unnecessary words. in the event that you can not find the answer in the pdf i attached or if there is no pdf attachment, you can search the internet if and only if the question provided wasn't available or attached.\n\n`;
+  // let result = `help me answer the questions i will provide after this message consecutively. I will attach a pdf file on this message that has the information or data for each provided question. Questions can be a multiple choice, true/false, or fill in the blanks. in the event that it's a multiple choice, just give back the answer in bold letters exactly as provided, if it's fill in the blanks, you will just give me the word that i will type in the blank and no other extra unnecessary words. in the event that you can not find the answer in the pdf i attached or if there is no pdf attachment, you can search the internet if and only if the question provided wasn't available or attached.\n\n`;
+  let result = "";
   let contentFound = false;
   const processedQuestions = new Set(); // Track already processed questions to avoid duplicates
   
