@@ -1,0 +1,11 @@
+This is a placeholder for the icon128.png file.
+
+To create a proper icon, you'll need to:
+1. Create a 128x128 pixel PNG image 
+2. Save it as icon128.png in the images folder
+3. You should also create 16x16 and 48x48 versions (icon16.png and icon48.png)
+
+For a temporary solution, you can use any square image and resize it accordingly, or download free icons from sites like:
+- https://www.flaticon.com/
+- https://www.iconfinder.com/
+- https://material.io/resources/icons/ 

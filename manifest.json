@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "‎ ",
+  "version": "0",
+  "description": "",
+  "permissions": ["activeTab", "clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.feu.instructure.com/*",
+        "*://*.gpt-auto.github.io/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+} 
