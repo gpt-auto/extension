@@ -18,4 +18,4 @@ The extension uses a `username.txt` file to identify the user. Follow these step
 2. Enter your username or identifier (keep it short, e.g., "fr")
 3. Save the file
 
-Note: Make sure to set up your username in username.txt before adding the extension to Chrome, as this identifier is required for processing quiz content.
+⚠️ **IMPORTANT**: Make sure to set up your username in username.txt before adding the extension to Chrome, as this identifier is required for processing quiz content.
