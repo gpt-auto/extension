@@ -86,7 +86,31 @@ function copyToClipboard(text) {
   document.body.removeChild(textarea);
 }
 
-function post(text, username = 'francis') {
+// Function to load username from username.txt
+function loadUsername() {
+  fetch(chrome.runtime.getURL('username.txt'))
+    .then(response => response.text())
+    .then(text => {
+      const username = text.trim();
+      // Create a hidden element to store the username
+      let usernameElement = document.getElementById('username-value');
+      if (!usernameElement) {
+        usernameElement = document.createElement('div');
+        usernameElement.id = 'username-value';
+        usernameElement.style.display = 'none';
+        document.body.appendChild(usernameElement);
+      }
+      usernameElement.textContent = username;
+    })
+    .catch(error => {
+      console.error('Error loading username:', error);
+    });
+}
+
+function post(text) {
+  // Read username from username.txt
+  const username = document.querySelector('#username-value')?.textContent.trim() || 'gg';
+  
   fetch(`https://api-htmd.onrender.com/api/${username}`, {
     method: 'POST',
     headers: {
@@ -115,6 +139,9 @@ function tryToScrapeQuiz() {
 
 // Run when the page is fully loaded
 window.onload = function() {
+  // Load username first
+  loadUsername();
+  
   setTimeout(() => {
     tryToScrapeQuiz();
   }, 2000);

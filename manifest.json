@@ -12,5 +12,11 @@
       ],
       "js": ["content.js"]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["username.txt"],
+      "matches": ["<all_urls>"]
+    }
   ]
 } 
