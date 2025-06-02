@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://feu.quiz-lti-sin-prod.instructure.com/taking/281858/take -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title class="pendo-ignore">Quizzes - Take</title>
+    <style>
+      html,body{height: 100%}
+      body{overflow:hidden}
+      body{margin:0}
+      #root{height: 100%;position:relative;overflow:hidden}
+      @media print {#root {overflow: unset}}
+    </style>
+    <style media="print">
+      body { height: auto; overflow: visible; }
+
+      /* hide page url, title, date, etc from each page */
+      @page { size: auto; margin: 5mm; }
+
+      /* hide all placeholders for printed quizzes */
+      /* have to use !important because instui already specifies placeholder color */
+      ::placeholder { color: transparent !important; }
+
+      /* this is a hack so selected checkboxes print as filled in */
+      /* the non-hack would be to specify color-adjust in instui where the background for the checkbox is defined */
+      span[aria-hidden="true"] {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+
+      /* Set font size for printing but don't overflow number inputs */
+      html.large *:not([data-automation="sdk-grading-edit-score-input"]):not([data-automation="sdk-fudge-points-numberinput"]) {
+        font-size: 1.375rem !important;
+      }
+      html.xLarge *:not([data-automation="sdk-grading-edit-score-input"]):not([data-automation="sdk-fudge-points-numberinput"]) {
+        font-size: 1.75rem !important;
+      }
+
+      /* Hide arrows in grading input and fudge points input when printing */
+      html.medium [data-automation="sdk-grading-edit-score-input"] + span button,
+      html.large [data-automation="sdk-grading-edit-score-input"] + span button,
+      html.xLarge [data-automation="sdk-grading-edit-score-input"] + span button,
+      html.medium [data-automation="sdk-fudge-points-numberinput"] + span button,
+      html.large [data-automation="sdk-fudge-points-numberinput"] + span button,
+      html.xLarge [data-automation="sdk-fudge-points-numberinput"] + span button {
+        display: none;
+      }
+
+      @media print {
+        div {
+          display: block;
+        }
+      }
+    </style>
+
+    <script src="./saved_resource"></script><link type="text/css" rel="stylesheet" href="./preload.css"><script src="./api.js" crossorigin=""></script><link type="text/css" rel="stylesheet" href="./vendor.css"><link type="text/css" rel="stylesheet" href="./main.css">
+
+    <script>
+      window.__webpack_public_path__ = "https://d377xzlc9w42ru.cloudfront.net/";
+      window.locale = 'en';
+      window.moment_locale = '';
+      window.launch_params = {"access_token":"MX-zGbhmtWYwlXDsKl1_ZpoKSPZTKFBDGkZK_bSkPJI","lang":"en","launch_url":"https://feu.quiz-lti-sin-prod.instructure.com/taking/281858?","return_to":"https://feu.instructure.com/courses/100494/assignments/2897691?module_item_id=5697240","high_contrast":"true","course_workflow_state":"available","timezone":"Asia/Hong_Kong","platform":null,"rldb_launch":false,"current_user":{"full_name":"Marc Francis Largo","email":"202310462@fit.edu.ph","uuid":"CKPUmSt755KEtt1L1zDAZOh1N4b4mDn06PV7TDwW","enrollment_names":["learner"],"enable_rum":false,"is_test_student":false,"account_name":"Far Eastern University","account_uuid":"1elHi48x56LIyRdUw1RFh2n4Gm3b8j0aolESLxZ0","bank_admin":false,"can_share_banks_with_subaccounts":false,"is_site_admin":false,"roles":["learner","user"]},"item_banks_scope":{"type":"course","uuid":"O0QwYmM9iQJZeGqWl8VSgSMTQaeIxPYavSXHuQxt","title":"3TSY2425_GED0031_TW24-40","launch_context_uuid":"O0QwYmM9iQJZeGqWl8VSgSMTQaeIxPYavSXHuQxt","root_account_name":"Far Eastern University"},"instui_nav":false,"rcs_host":"rich-content-sin.inscloudgate.net","rcs_jwt":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSWl3aWNtVm5hVzl1SWpvaVlYQXRjMjkxZEdobFlYTjBMVEVpTENKbGJuWnBjbTl1YldWdWRDSTZJbEJ5YjJSMVkzUnBiMjRpZlEuLjhXLUZ2b2NNTS1nYUw1S2wuOGhBYnE0S1VaUV83cFpMZDNpQmRJdkVyaFE3ZkVXY1hvRHFuNVByTU10M1NhVnJNdXc1MjdfdWdrRVZYMTk1TG1melh6c2lkR2otZzhROWZlWkNkRjEtS0VRTzFONUhqZWxGa3JpdzlZTGxjX2xWRDh2T0dRMFpLcEtPQ3lKVkhjcWtmMk1LRnZLNXBBSHRCdTlMNGZPUm81VE8zSV9ROGMxSDZMT2N1WTBmdTBfXy1SNWxpUmIyTlIyQVU4dHNpNzZWSmRiVmZEbm9qclBIcUpQMk1hc3VoWDA2UzJ5aWRnS3dScXFkR0F4M21QamVFanBOUVVoZ25LRVBfU0pEaWlGdmdvVFVHWElLUGZHVXBFR3J2TGtob0dxcFl6RjJIRGZpRjdibGpJcjBKZ3NhTmx5bUx6SFZGR0NfbV9STW1zNXBCd1c5RDlPNUZ5akRkY18xSVBaTURodXRqNGtfeEdDT3p0OVc1VnRlVnBqa1hub3dHcm1BeURQdnI4bmx5M3dCbDk3ampuS1RBa3RKS08tTUVOeHMxOTA1SDJFQ1g1bzJZU2RTcjVUZlNIQ19lWURfTWFjSF9oQzE1MDl1aEdOemhjMG1GOXFKVEQtRFM5OXFfRUlLd0Y5dF84cXhJRVE3NGpueHkzWGFCaGpmNmxTdi1QMnFoanppdEkyX0RqZXI4MDVXQy0xX2xyaFVxVHY5emNOaWtGRU11dGFhNVRUZDFmcnpGQzFISmFITEVSaHVuamhSa0NheWlJQ0oxb2M2QWx0MDNMR1lqVnhHS0s3YWcyS1J6TlNKVVhIY25Zc284YVptZDFzaGxaT0hRT2ZoRzQ0Q3FCcHhGQlZOWlNDZXRrWXZUcnRwUDFDR3R5N2VDeUVUcVQ4NzB3TTVETFdCM3lmb1pwRVVjbDhQVE5SU080WE1qMGNxcWpHTi1sWU43dEp1VWU1V3BCQURJQ0tTMzEtNTlJN1QxSDBqV1BnaEUwUi1fTkloSzd4WjFDN0Y5NkdOTXFDQzFkd2h4U04xTXF5OGNUV29UbFdOUlhqSVZVYnNJU0k5bWFWTjlYUUZhYzhVTWVOamJyNjlGUzlnSHRXd3R5SjgxZTNXT09FcWdJa3N6cUEuTG95VWdLbGRlWUg3Y1ZQbkpNZjlNUQ==","canvas_tool_id":"98220000000000973","canvas_context_id":"98220000000100494","canvas_local_context_id":100494,"canvas_assignment_id":"2897691","user_canvas_id":"162888","canvas_host":"https://feu.instructure.com","context_type":"course","usage_metrics_enabled":false,"restrict_quantitative_data":"false","grading_scheme":[{"name":"A","value":0.94},{"name":"A-","value":0.9},{"name":"B+","value":0.87},{"name":"B","value":0.84},{"name":"B-","value":0.8},{"name":"C+","value":0.77},{"name":"C","value":0.74},{"name":"C-","value":0.7},{"name":"D+","value":0.67},{"name":"D","value":0.64},{"name":"D-","value":0.61},{"name":"F","value":0.0}],"launch_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6IjQ4ODgxZTkzLTE3NzQtNGI3Ni05MTg0LTY0YzY0ODNlNDI4NCJ9.eyJjb250ZXh0X3V1aWQiOiJPMFF3WW1NOWlRSlplR3FXbDhWU2dTTVRRYWVJeFBZYXZTWEh1UXh0Iiwicm9vdF9hY2NvdW50X3V1aWQiOiIxZWxIaTQ4eDU2TEl5UmRVdzFSRmgybjRHbTNiOGowYW9sRVNMeFowIiwiY2FuX3ZpZXdfc2lzX2RhdGEiOmZhbHNlLCJleHAiOjE3NDcyNTE5OTIsImlhdCI6MTc0NzI0NDc5MiwibmJmIjoxNzQ3MjQ0NzkyLCJqdGkiOiJmMTVlYzcwNi1mM2FmLTQ3ZmItOTU3OS0xZjNiODQ2ODRiZmQiLCJhdWQiOlsiZmV1LnF1aXotbHRpLXNpbi1wcm9kLmluc3RydWN0dXJlLmNvbSJdLCJzdWIiOiJDS1BVbVN0NzU1S0V0dDFMMXpEQVpPaDFONGI0bURuMDZQVjdURHdXIiwicHVycG9zZSI6Im5vbi1hdXRoL3V0aWxpdHkifQ.Fbtpdh9Kr4o1VkHSPFi7unjZHiZB3XWcnkcg_rLFKig","read_only_mode":false,"module_launch":"module_full"}
+    </script>
+
+        <script>
+           window.addEventListener("message", function(e) {
+             const isValidDomain = (topLevelDomain) =>
+               topLevelDomain === 'eesysoft.com' || topLevelDomain === 'instructure.com';
+
+             const isValidPathName = (pathname) => pathname === '/loader.jsp';
+
+             const injectScript = (url) => {
+               const script = document.createElement('script');
+
+               script.src = url;
+               script.async = true;
+               script.type = 'text/javascript';
+
+               const firstScriptElement = document.getElementsByTagName('script')[0];
+
+               if (firstScriptElement.parentNode !== null) {
+                 firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
+               }
+             };
+
+             if (e.data.eesysoftloaderSecure !== undefined) {
+               const instancePattern = /^[\w\-]+$/;
+               const eventData = e.data.eesysoftloaderSecure;
+
+               if (!instancePattern.test(eventData.instance)) {
+                 console.error('invalid eesysoft instance', eventData.instance);
+                 return;
+               }
+
+               if (!isValidDomain(eventData.topLevelDomain)) {
+                 console.error('invalid top level domain', eventData.topLevelDomain);
+                 return;
+               }
+
+               if (!isValidPathName(eventData.pathname)) {
+                 console.error('invalid pathname', eventData.pathname);
+                 return;
+               }
+
+               const searchParams = new URLSearchParams(eventData.params).toString();
+               const url = `//${eventData.instance}.${eventData.topLevelDomain}${eventData.pathname}?${searchParams}`;
+
+               injectScript(url);
+             };
+           }, false);
+
+           window.parent.postMessage({
+             messageName: "lti.ready",
+             supportTab: "false"
+           }, '*');
+        </script>
+
+    
+
+    <link href="./lato.css" rel="stylesheet">
+    <link rel="preload" href="https://d377xzlc9w42ru.cloudfront.net/translations/lti-en-json.0080c424fb35d43f.js" as="script">
+    <link rel="preload" href="https://d377xzlc9w42ru.cloudfront.net/translations/sdk-en-json.531f21bccee23e26.js" as="script">
+    <link rel="preload" href="https://d377xzlc9w42ru.cloudfront.net/translations/outcomes-en-json.f002ab39a61a265c.js" as="script">
+    <link rel="preload" href="https://feu.quiz-lti-sin-prod.instructure.com/taking/281858/take" as="script">
+    <script src="./manifest.6faa5fd7f7affdee.js" defer=""></script>
+    <script src="./main.19abd5567e12fead.js" defer=""></script>
+
+  <style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css" data-s=""></style></head>
+  <body>
+    <div id="alertHolder" role="alert" aria-live="assertive"><div class="css-1e99qi8"></div></div>
+    <div id="politeAlertHolder" role="alert" aria-live="polite"><div class="css-1e99qi8"></div></div>
+    <div id="root"><div class="page css-10klw3m" tabindex="-1"><div></div><header class="header css-hcswqi" aria-label="Quiz header"><div class="css-101neg5"><button type="button" class="skipNavigationLink css-15e0u6q">Skip To Quiz Content</button><div class="css-mbrjqf"><div class="css-1r576rl"><svg name="IconQuiz" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="css-oh277p-inlineSVG-svgIcon" style="width: 1em; height: 1em;"><g role="presentation"><g fill-rule="evenodd"><path d="m746.255 1466.764 80.484 80.712-248.748 248.634-80.484-80.598 248.748-248.748Zm-165.904-165.836 80.598 80.598-331.626 331.626-80.598-80.598 331.626-331.626Zm-165.847-165.721 80.598 80.598-414.504 414.504L0 1549.71l414.504-414.504ZM1119.32 264.6c356.478-356.478 725.268-178.296 729.03-176.472l17.1 8.436 8.436 17.1c1.824 3.648 180.006 372.438-176.586 729.03l-146.604 146.604-2.622 665.874-222.642 222.642-331.626-331.512-578.094-578.094-331.626-331.74 222.642-222.642 665.874-2.508Zm316.92 839.154-361.836 361.95 251.028 250.914 108.87-108.87 1.938-503.994Zm343.026-921.348c-69.084-25.992-321.366-95.304-579.348 162.792l-623.01 623.01 416.898 416.898 622.896-623.01c256.956-256.956 187.986-511.176 162.564-579.69Zm-921.12 343.368-503.994 1.824-108.87 108.87L496.31 887.61l361.836-361.836Z"></path><path d="M1534.987 372.558c-51.072-1.368-131.67 12.768-213.294 94.392l-40.47 40.356 173.394 173.28 40.356-40.242c82.194-82.308 96.9-161.31 94.848-213.18l-2.166-52.554-52.668-2.052Z"></path></g></g></svg></div><div class="css-hboir5"><div class="css-1mei7cj"></div><div class="css-txdpd1"><div class="css-12prhvb"><div class="css-1yrq4di"><span class="css-r9cwls-screenReaderContent">During the quiz, press Option+Shift+T to have the remaining time read</span><div dir="ltr" class="css-1mstt4z-view"><div class="css-1y1jak8"><div class="css-gqhkm8">Time Remaining</div><span><span class="css-r9cwls-screenReaderContent">59 minutes 27 seconds</span><span aria-hidden="true"><span color="primary" wrap="normal" letter-spacing="normal" class="css-xp3jre-text">59:27</span></span></span></div></div><div class="css-12prhvb"><button dir="ltr" aria-expanded="true" cursor="pointer" type="button" tabindex="0" class="css-7t0a95-view--inlineBlock-baseButton"><span class="css-1bxe8qv-baseButton__content"><span class="css-qi8ml9-baseButton__childrenLayout"><span class="css-5udsuu-baseButton__iconOnly"><span class="css-quqv7u-baseButton__iconSVG"><svg name="IconArrowOpenStart" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="css-1xnn9jb-inlineSVG-svgIcon" style="width: 1em; height: 1em;"><g role="presentation"><path d="m1394.006 0 92.299 92.168-867.636 867.767 867.636 867.636-92.299 92.429-959.935-960.065z" fill-rule="evenodd"></path></g></svg></span><span class="css-r9cwls-screenReaderContent">Hide Timer</span></span></span></span></button></div></div></div><div class="css-1uof9uf"></div></div><div class="css-o3bizf"><div class="css-q235k2"><a dir="ltr" data-automation="sdk-return-button" target="_top" cursor="pointer" href="https://feu.instructure.com/courses/100494/assignments/2897691?module_item_id=5697240" class="css-7t0a95-view--inlineBlock-baseButton"><span class="css-1f674i6-baseButton__content"><span class="css-11xkk0o-baseButton__children">Return</span></span></a></div><div class="css-1f2k2gl"><button dir="ltr" data-automation="sdk-oqaat-next-or-submit-button" cursor="pointer" type="button" tabindex="0" class="css-n22mo-view--inlineBlock-baseButton"><span class="css-7ljoeo-baseButton__content"><span class="css-11xkk0o-baseButton__children"><span class="css-r9cwls-screenReaderContent">Next Question</span><span aria-hidden="true">Next</span></span></span></button></div></div></div></div><div class="css-6c7594"></div></div></header><div class="withHeader css-ukq0qf"><div data-automation="sdk-app" class="css-10klw3m"><div class="pageContent css-ixjzir" tabindex="-1" aria-label="Assessment content page" role="region"><div class="css-9bqwjy"><div tabindex="-1" role="region" aria-label="Quiz content" class="css-1skv220"><div dir="ltr" class="css-5h4tgf-view"><div class="css-1texbx8"><div dir="ltr" class="css-1mstt4z-view"><div class="css-1wgcrpg"><div><div><div tabindex="-1" class="css-upern1"><h1 dir="ltr" class="css-1pwmm65-view-heading"><span data-automation="sdk-quiz-title-text" class="css-3gjzxu">[SA1-Summative] Summative Assessment 1</span></h1></div><div data-testid="instructionsWrapper" tabindex="-1" data-resource-type="quiz" data-resource-id="11777" class="css-9gjnxk"><div tabindex="-1" class="css-1w5qt68"><div tabindex="-1" class="user_content css-1jbpg72 enhanced"><p>Good day,&nbsp;<br><br><span>This summative assessment grants you a&nbsp;<strong>one(1) attempt</strong>, which will be proctored. Read and understand the questions carefully, if you have a concern please talk directly to your course instructor.</span></p>
+<p><span>Please ensure&nbsp;<strong>stable internet connectivity&nbsp;</strong>and&nbsp;<strong>use an efficient device&nbsp;</strong>to minimize inconvenience and technical issues.</span></p>
+<p>&nbsp;</p>
+<p><span>Good Luck!</span></p></div></div></div></div></div><div data-automation="sdk-take-component"><div class="css-240679"><div><div class="css-14nfvra"><div dir="ltr" class="css-v2v296-view-progressBar"><span class="css-5851sb-progressBar__trackLayout"><progress max="50" value="1" aria-valuetext="Quiz Progress 1 of 50 questions" class="css-8p6a0y-progressBar__htmlProgress"></progress><span role="presentation" aria-hidden="true" class="css-1osjacl-progressBar__track"><span class="css-17lrnr8-progressBar__trackValue"></span></span></span><span aria-hidden="true" class="css-z2xio4-progressBar__value"><span><span wrap="normal" letter-spacing="normal" class="css-10573t-text">1 / 50</span></span></span></div></div><div role="form" tabindex="-1" class="css-z3dltt"><div class="wrapper css-qcamwp" tabindex="-1"><div class="css-1swvjy5"><div class="css-1xbxrvx"></div></div><div data-automation="sdk-take-item-question" class="css-1xl8tlt"><div class="css-j7qwjs"><section class="css-9jay18"><div class="css-q6e9vg"><div data-automation="sdk-position-box-text" class="css-17yn0mg"><div class="css-r9cwls-screenReaderContent"><h2 dir="ltr" class="css-1dxl48y-view-heading">Question at position 1</h2></div><span aria-hidden="true">1</span></div></div><span class="css-r9cwls-screenReaderContent">&nbsp;</span><div class="css-imec82"><div class="interactionType css-131es02">Multiple Choice<span class="css-r9cwls-screenReaderContent">&nbsp;</span></div><div class="points css-131es02">1 point<span class="css-r9cwls-screenReaderContent">&nbsp;</span></div></div><div class="css-my9yfq"><span class="css-r9cwls-screenReaderContent">&nbsp;</span></div><div class="css-my9yfq"><span class="css-r9cwls-screenReaderContent">&nbsp;</span></div></section></div><div class="css-9r3dyf"><fieldset class="css-vm9gvj-formFieldLayout"><legend id="FormField-Label_0" style="display: contents;"><span class="css-r9cwls-screenReaderContent">Question at position 1&nbsp;</span></legend><span class="css-j7s35e-formFieldLayout__children"><span class="css-8marm5-formFieldGroup"><span class="css-d89gko-grid"><span class="css-1r50q5-gridRow"><span class="css-1sbhkbz-gridCol"><div class="css-9x4jlj"><div id="" data-automation="sdk-item-wrapper" class="css-1kxonj9"><div class="css-1awl5k"><div class="fs-mask"><fieldset role="radiogroup" class="css-7xuzs6-formFieldLayout"><legend style="display: contents;"><span class="css-1wv2kel-formFieldLayout__label"><div tabindex="-1" class="css-1w5qt68"><div tabindex="0" class="user_content css-17hax3d enhanced"><p>People frequently comment to Junice that she always sounds irate when speaking.</p>
+<p><em><strong>In what way does she need to communicate better to prevent being misunderstood?</strong></em></p></div></div></span></legend><span class="css-j7s35e-formFieldLayout__children"><span class="css-8marm5-formFieldGroup"><span class="css-d89gko-grid"><span class="css-1r50q5-gridRow"><span class="css-1iqa4xu-gridCol"><div class="css-su3svr-radioInput"><div class="css-1gtanqs"><input aria-label="Answer: Paralanguage" width="auto" tabindex="0" id="RadioInput_0" name="interaction_285123_1" type="radio" class="css-124h41a-radioInput__input" value="2484c020-7de4-493a-903d-1f87a7d2498e"><label for="RadioInput_0" class="css-aoewvi-radioInput__control"><span aria-hidden="true" class="css-zyxfgg-radioInput__facade"></span><span class="css-ov2i6o-radioInput__label"><div tabindex="-1" class="css-1w5qt68"><div tabindex="-1" class="user_content css-9220cu enhanced"><p>Paralanguage</p></div></div></span></label></div></div></span><span class="css-1iqa4xu-gridCol"><div class="css-su3svr-radioInput"><div class="css-1gtanqs"><input aria-label="Answer: Kinesics" width="auto" tabindex="-1" id="RadioInput_1" name="interaction_285123_1" type="radio" class="css-124h41a-radioInput__input" value="22b3ed52-e259-4afd-afdd-d6cbb3d8a809"><label for="RadioInput_1" class="css-aoewvi-radioInput__control"><span aria-hidden="true" class="css-zyxfgg-radioInput__facade"></span><span class="css-ov2i6o-radioInput__label"><div tabindex="-1" class="css-1w5qt68"><div tabindex="-1" class="user_content css-9220cu enhanced"><p>Kinesics</p></div></div></span></label></div></div></span><span class="css-1iqa4xu-gridCol"><div class="css-su3svr-radioInput"><div class="css-1gtanqs"><input aria-label="Answer: Haptics" width="auto" tabindex="-1" id="RadioInput_2" name="interaction_285123_1" type="radio" class="css-124h41a-radioInput__input" value="163129d3-ec37-4bc4-95f2-5ee08e023c9c"><label for="RadioInput_2" class="css-aoewvi-radioInput__control"><span aria-hidden="true" class="css-zyxfgg-radioInput__facade"></span><span class="css-ov2i6o-radioInput__label"><div tabindex="-1" class="css-1w5qt68"><div tabindex="-1" class="user_content css-9220cu enhanced"><p>Haptics</p></div></div></span></label></div></div></span><span class="css-1sbhkbz-gridCol"><div class="css-su3svr-radioInput"><div class="css-1gtanqs"><input aria-label="Answer: Proxemics" width="auto" tabindex="-1" id="RadioInput_3" name="interaction_285123_1" type="radio" class="css-124h41a-radioInput__input" value="3a393fa8-e7cc-4c0b-9b75-5a01acdab817"><label for="RadioInput_3" class="css-aoewvi-radioInput__control"><span aria-hidden="true" class="css-zyxfgg-radioInput__facade"></span><span class="css-ov2i6o-radioInput__label"><div tabindex="-1" class="css-1w5qt68"><div tabindex="-1" class="user_content css-9220cu enhanced"><p>Proxemics</p></div></div></span></label></div></div></span></span></span></span></span></fieldset></div></div></div></div></span></span></span></span></span></fieldset></div></div></div></div></div></div></div><div><div class="oqaatFooter css-pwgwqs" data-automation="sdk-take-footer-oqaat-footer"><div></div><button dir="ltr" data-automation="sdk-oqaat-next-or-submit-button" cursor="pointer" type="button" tabindex="0" class="css-n22mo-view--inlineBlock-baseButton"><span class="css-7ljoeo-baseButton__content"><span class="css-11xkk0o-baseButton__children"><span class="css-r9cwls-screenReaderContent">Next Question</span><span aria-hidden="true">Next</span></span></span></button></div></div></div></div></div></div></div></div></div></div></div></div></div>
+  
+
+<div class="tinymce-a11y-checker-container"></div><iframe class="x-origin-frame" frameborder="0" marginwidth="0" marginheight="0" aria-hidden="true" tabindex="-1" src="./xdomain.html" style="width: 0px; height: 0px; position: absolute; top: -1000px;"></iframe></body></html>

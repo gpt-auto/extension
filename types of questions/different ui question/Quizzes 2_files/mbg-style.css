@@ -1,0 +1,1118 @@
+/* ==============================================================================================
+
+          MMMMMMMM               MMMMMMMMBBBBBBBBBBBBBBBBB           GGGGGGGGGGGGG
+          M:::::::M             M:::::::MB::::::::::::::::B       GGG::::::::::::G
+          M::::::::M           M::::::::MB::::::BBBBBB:::::B    GG:::::::::::::::G
+          M:::::::::M         M:::::::::MBB:::::B     B:::::B  G:::::GGGGGGGG::::G
+          M::::::::::M       M::::::::::M  B::::B     B:::::B G:::::G       GGGGGG
+          M:::::::::::M     M:::::::::::M  B::::B     B:::::BG:::::G              
+          M:::::::M::::M   M::::M:::::::M  B::::BBBBBB:::::B G:::::G              
+          M::::::M M::::M M::::M M::::::M  B:::::::::::::BB  G:::::G    GGGGGGGGGG
+          M::::::M  M::::M::::M  M::::::M  B::::BBBBBB:::::B G:::::G    G::::::::G
+          M::::::M   M:::::::M   M::::::M  B::::B     B:::::BG:::::G    GGGGG::::G
+          M::::::M    M:::::M    M::::::M  B::::B     B:::::BG:::::G        G::::G
+          M::::::M     MMMMM     M::::::M  B::::B     B:::::B G:::::G       G::::G
+          M::::::M               M::::::MBB:::::BBBBBB::::::B  G:::::GGGGGGGG::::G
+          M::::::M               M::::::MB:::::::::::::::::B    GG:::::::::::::::G
+          M::::::M               M::::::MB::::::::::::::::B       GGG::::::GGG:::G
+          MMMMMMMM               MMMMMMMMBBBBBBBBBBBBBBBBB           GGGGGG   GGGG
+                                                                        
+          FEU INSTITUTE OF TECHNOLOGY
+          CANVAS MILES CUSTOM UI DESIGN
+          Author: Prof. Manuel B. Garcia
+          Author URL: https://manuelgarcia.info
+          Author URL: https://designrshub.com
+          Author Contact: mbgarcia@feutech.edu.ph
+          Version: 2.2
+          Since: September 12, 2020;
+
+============================================================================================== */
+
+/* ======================== MILES COURSE ========================================= */
+#mbg-miles{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+#mbg-miles .title{
+    margin: 0 0 30px 0;
+    padding: 50px 100px;
+    color: white;
+    text-align: center;
+    background: radial-gradient(at 50%, #1b4d32d9, #1b4d32);
+    background: radial-gradient(at 50%, #1b4d32d9, #0b311d);
+}
+
+#mbg-miles .title:before{
+    /** content: ""; **/
+    display: block;
+    height: auto;
+    width: 70%;
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto 70px auto;
+    background-size: contain;
+    background-image: url("https://i.ibb.co/KzhQXgH/miles.png");
+}
+
+#mbg-miles .title h4{ margin-bottom: 0; line-height: 1em; font-weight: bold; }
+#mbg-miles .title h2{ color: #fbbd14; font-weight: bold; line-height: 1.2em; margin: 0;}
+
+#mbg-miles .title h1{
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 50px 0;
+    line-height: 1em; 
+    letter-spacing: 15px;
+}
+
+#mbg-miles .title h1:after {
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    font-weight: bold;
+    padding: 0 0 25px 0;
+    display: block;
+    color: #fbbd14;
+    /** content: ''; **/
+    font-size: 17px;
+}
+
+#mbg-miles .title p{ color: #adbdae; font-weight: bold; }
+
+.tech{ background: url("https://www.feutech.edu.ph/wp-content/uploads/2019/09/innov-center-lobby.jpg"); }
+.alabang{ background: url("https://www.feutech.edu.ph/wp-content/uploads/2019/09/innov-center-lobby.jpg"); }
+.diliman{ background: url("https://www.feutech.edu.ph/wp-content/uploads/2019/09/innov-center-lobby.jpg"); }
+
+/* ======================== REGULAR COURSE ========================================= */
+.mbg-syllabus-title{
+    margin: 0 0 30px 0;
+    padding: 50px 100px;
+    color: white;
+    background: #1b4d32;
+    text-align: center;
+    border-top: 40px solid #1b4d32;
+    background: #1b4d32 url(https://www.feutech.edu.ph/wp-content/themes/feueac/images/logo-title.png) no-repeat center top;
+}
+
+.mbg-syllabus-title h1{
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 70px 0 0 0;
+    line-height: 1;
+    letter-spacing: 15px;
+}
+
+.mbg-syllabus-title h1:after {
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    font-weight: bold;
+    padding: 0 0 25px 0;
+    display: block;
+    color: #fbc926;
+    content: 'Syllabus';
+    font-size: 17px;
+}
+
+.mbg-syllabus-title h2{
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+
+.mbg-syllabus-title span{
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    font-weight: bold;
+    padding: 0 0 25px 0;
+    display: inline-block;
+    color: #fbc926;
+}
+
+.mbg-syllabus-title p{
+    color: #adbdae;
+}
+
+.mbg-syllabus-title img{
+    margin: 0 0 50px 0;
+}
+
+
+.mbg-syllabus-card {
+    position: relative;
+    display: block;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-radius: 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.mbg-syllabus-card img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.mbg-syllabus-title h1:before {
+    content: '';
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.mbg-syllabus-card span{
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    background: #000000b5;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.mbg-syllabus-card a{
+    background: #1b4d32;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.mbg-syllabus-card a:hover{
+    background: #0e3c23
+}
+
+.mbg-syllabus-card p{
+    margin: 15px 0 30px 0;
+}
+
+.mbg-syllabus-card div {
+    padding: 1.25rem 1.25rem 2.25rem 1.25rem;
+}
+
+
+
+/* ================================================================= */
+.mbg-module-title{
+    padding: 150px 100px 50px 100px;
+    color: white;
+    background: #1b4d32;
+}
+
+.mbg-module-title h1{
+    letter-spacing: -2px;
+    font-family: 'Helvetica';
+    font-size: 63px;
+    font-weight: 600;
+    line-height: 1.1;
+    padding: 20px 0 10px 0;
+}
+
+.mbg-module-title p{
+    color: #adbdae;
+}
+
+.mbg-module-title span {
+    background: #00000038;
+    padding: 10px 24px;
+    display: inline-block;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mbg-module-title p:first-child{
+    text-transform: uppercase;
+    color: #1b4d32;
+    font-weight: bold;
+    background: #a0c3a3;
+    display: inline;
+    padding: 10px 20px;
+}
+
+.mbg-module-page{
+    background-color: #1b4d32f5;
+    color: white;
+    padding: 120px 70px 50px 70px;
+    background-image: linear-gradient(0deg, #0e4628b8 5%, #1b4d32 110%), url(/courses/14326/files/576910/preview);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.mbg-module-page h1{
+    font-size: 3em;
+    color: white;
+    font-size: 3.2em;
+    text-transform: uppercase;
+}
+
+.mbg-module-page p{
+    color: #adbdae;
+    margin-bottom: 0;
+}
+
+.mbg-module-page span{
+    color: #fbc926;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mbg-module-toc{
+    margin: 30px 0 30px 0;
+    padding: 20px 30px;
+    color: #144a2d;
+    display: inline-block;
+    border: 1px solid #144a2d;
+    background-color: #f8f9fa;
+}
+
+.mbg-module-toc a{
+    text-decoration: none;
+}
+
+.mbg-module-toc a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.mbg-module-toc span{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+.mbg-module-content h2{
+    font-weight: bold;
+    border-bottom: 2px solid #1b4d32;
+    color: #1b4d32;
+}
+
+/* ================================================================= */
+h1{
+    font-weight: bold;
+}
+
+.pages.show .page-title{
+    display: hidden!important;
+}
+
+pre{
+    margin: 10px 20px 0 20px;
+}
+
+.btn-mbg{	
+    background: #1b4d32;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+/* =========== COURSE OBJECTIVES ==================================== */
+.mbg-course-description{
+    background: #f2fff8;
+    border: 1px solid #1b4d32;
+    margin: 0 0 30px 0;
+}
+
+.mbg-course-description:after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #1b4d32;
+}
+
+.mbg-course-description p {
+    font-weight: normal;
+    padding: 10px 20px 0 20px;
+}
+
+.mbg-course-description h2 {
+    background: #1b4d32;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.mbg-course-description ol {
+    padding: 0 30px 20px 30px;
+}
+
+/* ============ ACCORDION ========================= */
+
+.mbg-accordion dl, .accordion-list {
+    border: 1px solid #1b4d32;
+    margin: 0;
+}
+
+.mbg-accordion dl:after, .accordion-list:after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #1b4d32;
+}
+
+.mbg-accordion dd, .accordion__panel {
+    background-color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-left: 0;
+}
+
+.mbg-accordion h2 {
+    background: #1b4d32;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.mbg-accordion a {
+    text-decoration: none;
+}
+
+.mbg-accordion p {
+  padding: 20px 40px 20px 40px;
+}
+
+.mbg-accordion h1{
+    padding: 20px 40px 0px 40px;
+}
+
+.mbg-accordion {
+  position: relative;
+  background-color: #eee;
+    margin: 0 0 30px 0;
+}
+
+a.mbg-button.mbg-disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+
+a.mbg-button.mbg-wv:before {
+    font-family: "InstructureIcons-Line";
+    display: inline-block;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    text-transform: none !important;
+    font-style: normal !important;
+    content: "?";
+    margin-right: 11px;
+    vertical-align: text-bottom;
+    font-weight: bold;
+}
+
+a.mbg-button.mbg-op:before {
+    font-family: "InstructureIcons-Line";
+    display: inline-block;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    text-transform: none !important;
+    font-style: normal !important;
+    content: "?";
+    margin-right: 11px;
+    vertical-align: text-bottom;
+    font-weight: bold;
+}
+
+a.mbg-button.mbg-vm:before {
+    font-family: "InstructureIcons-Line";
+    display: inline-block;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    text-transform: none !important;
+    font-style: normal !important;
+    content: "?";
+    margin-right: 11px;
+    vertical-align: text-bottom;
+    font-weight: bold;
+}
+
+.accordion-content a{
+    background: #1b4d32;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin: 0 0px 40px 40px;
+    display: inline-block;
+}
+
+.accordion-content a:hover{
+    background: #0e3c23
+}
+
+.accordionTitle, .accordion__Heading {
+    background-color: #f2fff8;
+    text-align: left;
+    font-weight: 700;
+    padding: 2em;
+    display: block;
+    text-decoration: none;
+    color: #1b4d32;
+    transition: background-color 0.5s ease-in-out;
+    border-bottom: 1px solid #1b4d32;
+}
+.accordionTitle:before, .accordion__Heading:before {
+  content: "+";
+    padding: 0 20px 0 0;
+  font-size: 1.5em;
+  line-height: 23px;
+  float: left;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.accordionTitle:hover, .accordion__Heading:hover {
+  background-color: #1b4d32;
+    background-color: #1b4d32;
+    color: white;
+    text-decoration: none;
+}
+
+.accordionTitleActive, .accordionTitle.is-expanded {
+  background-color: #1b4d32;
+    color: white;
+}
+.accordionTitleActive:before, .accordionTitle.is-expanded:before {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+     padding: 0 0px 0 29px;
+    line-height: 1px;
+}
+
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+  max-height: 50em;
+  transition: max-height 1s;
+}
+
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+
+.animateIn {
+  -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+          animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+  -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+          animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
+
+
+/* ============ GRADING SYSTEM ========================= */
+.mbg-grading-system {
+    background: #f2fff8;
+    border: 1px solid #1b4d32;
+    width: 100%;
+    margin: 0px 0px 30px 0;
+}
+
+.mbg-grading-system tr:first-child th {
+    background: #1b4d32;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
+}
+
+.mbg-grading-system th {
+    padding: 10px 20px;
+    border: 1px solid #1b4d32;
+}
+
+.mbg-grading-system tr:last-child td {
+    border-bottom: 7px solid #1b4d32;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mbg-grading-system tr:last-child td p {
+    margin: 0;
+}
+
+.mbg-grading-system tr {
+    border: 1px solid #1b4d32;
+}
+
+.mbg-grading-system tr td {
+    padding: 10px 20px!important;
+    border: 1px solid #1b4d32;
+}
+
+/* ============ SYLLABUS 2 ========================= */
+.mbg-course-syllabus2{
+    margin: 0 0 30px 0;
+}
+
+.mbg-course-syllabus2:after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #1b4d32;
+}
+
+.mbg-course-syllabus2 ul{
+    list-style: none;
+      margin: 0;
+  padding: 0;
+}
+
+.mbg-course-syllabus2 ul li{  
+
+}
+
+.mbg-course-syllabus2 ul li:before {
+    margin-right: 30px;
+    padding: 10px 15px;
+    color: #f2fff8;
+    width: 1.2em;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    background: #1b4d32;
+    border-bottom: 1px solid #f2fff8;
+}
+
+
+.mbg-course-syllabus2 h2{
+    background: #1b4d32;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.mbg-course-syllabus2 .item {
+  border: 1px solid #1b4d32;
+  overflow: hidden;
+  margin: 0 0 -1px 0;
+}
+.mbg-course-syllabus2 .item:target .mbg-submenu {
+  max-height: 50em;
+}
+.mbg-course-syllabus2 .item .btn {
+    display: block;
+    padding: 0;
+    color: #1b4d32;
+    background-color: #f2fff8;
+    position: relative;
+    text-align: left;
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.mbg-course-syllabus2 .item .btn:hover {
+    background: #1b4d32;
+    color: white;
+}
+
+.mbg-course-syllabus2 .item .btn span{
+    margin-right: 30px;
+    padding: 30px 15px;
+    color: #f2fff8;
+    width: 1.2em;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    background: #1b4d32;
+}
+
+.mbg-course-syllabus2 .item .btn:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #1b4d32;
+  left: 20px;
+  bottom: -7px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.mbg-course-syllabus2 .item .btn .icon {
+  margin-right: 10px;
+}
+
+.mbg-submenu {
+  background-color: #f2fff8;
+  color: #333;
+  overflow: hidden;
+  transition: max-height .3s;
+  max-height: 0em;
+}
+.mbg-submenu__item {
+  display: block;
+    padding: 15px 35px 15px 110px !important;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    list-style: none;
+}
+.mbg-submenu__item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: #1b4d32;
+  opacity: 0;
+  transition: all .3s;
+}
+.mbg-submenu__item:hover:before {
+  opacity: 1;
+}
+
+/* ============ COURSE REQUIREMENTS ========================= */
+.mbg-course-requirements {
+    background: #f2fff8;
+    border: 1px solid #1b4d32;
+    width: 100%;
+    margin: 0px 0px 30px
+}
+
+.mbg-course-requirements tr:first-child th {
+    background: #1b4d32;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
+}
+
+.mbg-course-requirements tr:last-child td {
+    border-bottom: 7px solid #1b4d32;
+}
+
+.mbg-course-requirements th {
+    padding: 10px 20px;
+    border: 1px solid #1b4d32;
+}
+
+.mbg-course-requirements tr {
+    border: 1px solid #1b4d32;
+}
+
+.mbg-course-requirements tr td {
+    padding: 10px 20px!important;
+    border: 1px solid #1b4d32;
+}
+
+/* ============ REFERENCES ========================= */
+.mbg-references {
+    background: #f2fff8;
+    border: 1px solid #1b4d32;
+    margin: 0 0 30px 0;
+}
+
+.mbg-references:after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #1b4d32;
+}
+
+.mbg-references h2 {
+    background: #1b4d32;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.mbg-references ul{
+    padding: 20px;
+}
+
+/* =========== ACTIVITY: ESSAY ==================================== */
+.mbg-activity-essay{
+    background: #f2fff8;
+    border: 1px solid #1b4d32;
+    margin: 0 0 10px 0;
+}
+
+.mbg-activity-essay:after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #1b4d32;
+}
+
+.mbg-activity-essay ul {
+    margin: 0 0 6px 55px;
+}
+
+.mbg-activity-essay p {
+    font-weight: bold;
+    padding: 10px 20px 0 20px;
+}
+
+.mbg-activity-essay h2 {
+    background: #1b4d32;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.mbg-activity-essay h3 {
+    font-weight: bold;
+    padding: 0px 20px 0 20px;
+}
+
+.mbg-activity-essay ol {
+    padding: 0 30px 20px 30px;
+}
+
+/* =========== ACTIVITY ==================================== */
+.mbg-activity{
+    margin: 0 0 30px 0;
+    padding: 50px 100px;
+    color: white;
+    background: #1b4d32;
+    text-align: center;
+    border-top: 40px solid #1b4d32;
+    background: #1b4d32 url(http://www.feutech.edu.ph/wp-content/themes/feueac/images/logo-title.png) no-repeat center top;
+}
+
+.mbg-activity h1{
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 70px 0 0 0;
+    line-height: 1;
+    letter-spacing: 15px;
+}
+
+.mbg-activity yellow {
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    font-weight: bold;
+    padding: 0 0 25px 0;
+    display: block;
+    color: #fbc926;
+    font-size: 17px;
+}
+
+.mbg-activity h2{
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+
+.mbg-activity span{
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    font-weight: bold;
+    padding: 0 0 25px 0;
+    display: inline-block;
+    color: #fbc926;
+}
+
+.mbg-activity p{
+    color: #adbdae;
+}
+
+.mbg-activity img{
+    margin: 0 0 50px 0;
+}
+
+
+/* =========== COURSE SYLLABUS ==================================== */
+.mbg-course-syllabus{
+    position: relative;
+    background-color: #eee;
+    margin: 0 0 30px 0;
+}
+
+.mbg-course-syllabus h2 {
+    background: #1b4d32;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.mbg-course-syllabus ol{
+    counter-reset: mbg-items;
+    list-style: none;
+    margin: 0;
+}
+
+.mbg-course-syllabus ol li:before{
+    margin-right: 30px;
+    padding: 10px 15px;
+    content: counter(mbg-items);
+    color: #f2fff8;
+    width: 1.2em;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    background: #1b4d32;
+    border-bottom: 1px solid #f2fff8;
+}
+
+.mbg-course-syllabus ol li:last-child:before{
+    border: none;
+}
+
+.mbg-course-syllabus ol li{  
+    background-color: #f2fff8;
+    text-align: left;
+    font-weight: 700;
+    display: block;
+    text-decoration: none!important;
+    color: #1b4d32;
+    transition: background-color 0.5s ease-in-out;
+    border-bottom: 1px solid #1b4d32;
+    border-right: 1px solid #1b4d32;
+    font-size: 16px;
+    counter-increment: mbg-items;
+    text-decoration: none !important;
+}
+
+.mbg-course-syllabus ol li:hover, mbg-course-syllabus ol li:hover a{
+    color: white;
+    background: #1b4d32;
+} 
+
+.mbg-course-syllabus ol li:hover:before {
+    border: none;
+}
+
+.mbg-course-syllabus ol li:hover:before a{
+    color: white;
+}
+
+#mbg-cright {
+    margin: -26px 0 0 0;
+}
+
+#mbg-cright:after {
+    content: '';
+    font-size: 13px;
+    color: #1b4d32;
+    font-weight: bold;
+}
+
+
+.mbg-guide{ background: #f1f1f1; padding: 2em; margin-bottom: 40px;}
+.mbg-guide .mbg-heading {
+    background: #1b4d32;
+    padding: 20px;
+    border-radius: 0.25em 0.25em 0 0;
+    margin: -2em -2em 0 -2em;
+}
+
+.mbg-guide .mbg-heading:before {
+    content: 'FEU CANVAS GUIDES';
+    font-size: .7em;
+    text-align: center;
+    display: block;
+    color: #fbc926;
+    font-weight: bold;
+}
+
+.mbg-guide .mbg-heading h1 {
+    background: white;
+    padding: 7px 20px;
+    color: #1b4d32;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 0.25em;
+    font-weight: bold;
+}
+
+.mbg-guide .mbg-heading h2 {
+    background: #1b4d32;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 0 20px 0;
+    line-height: 1em;
+}
+
+.mbg-guide h2{
+    border-bottom: 1px solid #9898984f;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px 0;
+    margin: 10px 0 20px 0;
+    font-size: 1.5em;
+    border: none;
+}
+
+.mbg-guide img {
+    padding: 20px;
+    background: white;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.mbg-guide ul.mbg-toc {
+    margin: 0;
+    list-style-type: none;
+}
+
+.mbg-guide ul.mbg-toc li {
+    background: white;
+    border-left: 5px solid #1b4d32;
+    margin: 0 0 10px 0;
+}
+
+.mbg-guide ul.mbg-toc li a {
+    font-weight: bold;
+    text-decoration: none!important;
+    display: block;
+    padding: 10px 20px;
+}
+
+.mbg-guide ul.mbg-toc li a:hover {
+    background: #1b4d32;
+    transition: all .5s ease;
+    color: white;
+}
+
+.mbg-guide ul.mbg-toc li:hover a{ color: white;}
+
+iframe{ width: 100vw; height: calc(100vw * 0.4); min-height: 90vh!important;}
+
+
+#MBG-CONSULTATION-TABLE{ width:100%; display: block; overflow-x: auto; white-space: nowrap;}
+#MBG-CONSULTATION-TABLE table { border: 3px solid #1b4d32; width: 100%; margin-bottom: 30px; }
+#MBG-CONSULTATION-TABLE th { background: #1b4d32; color: #FFF; text-transform: uppercase}
+#MBG-CONSULTATION-TABLE td { background: #f2fff8; border: 1px solid #0064001f; text-align: center; }
+#MBG-CONSULTATION-TABLE td, th {  padding: 0.75em 1em; overflow: hidden; text-overflow: ellipsis; }
+#MBG-CONSULTATION-TABLE td:empty{ background: white; border-top: none; border-bottom: none; }
+#MBG-CONSULTATION-TABLE td:nth-child(1){ font-weight: bold; text-align: left; }
+
+/* ======================== RESPONSIVE ========================================= */
+@media only screen and (max-width: 600px) {
+  #mbg-miles .title, .mbg-syllabus-title{ padding: 50px 20px;}
+  #mbg-miles .title h1, .mbg-syllabus-title h1{ font-size: 3.3em; letter-spacing: 10px;}
+  #mbg-miles .title p, .mbg-syllabus-title p{ font-size: 0.9em;}
+  #mbg-miles .title h2{ font-size: 1.2em;}
+  #mbg-miles .title h4 { font-size: 0.9em; }
+  #mbg-miles .title:before{ padding: 50px 0; margin: 0 auto; }
+
+  .mbg-guide{ padding: 1em; }
+  .mbg-guide .mbg-heading { margin: -1em -1em 0 -1em; }
+
+  iframe{ width: 100vw; height: calc(100vw * 0.6); }
+
+  #MBG-CONSULTATION-TABLE table { height: 100%!important;  display: block; overflow-x: auto; white-space: nowrap; }
+  #MBG-CONSULTATION-TABLE th { text-align: left; }
+} 

@@ -25,7 +25,17 @@ function scrapeQuizContent() {
     }
     
     if (questionTextElement) {
+      // Get the question text
       questionText = questionTextElement.textContent.trim();
+      
+      // Find any images in the question
+      const images = questionTextElement.querySelectorAll('img');
+      let imageUrls = [];
+      images.forEach(img => {
+        if (img.src) {
+          imageUrls.push(img.src);
+        }
+      });
       
       // Skip if we've already processed this question
       if (processedQuestions.has(questionText)) {
@@ -36,7 +46,14 @@ function scrapeQuizContent() {
       processedQuestions.add(questionText);
       
       contentFound = true;
-      result += `Question:\n${questionText}\n\n`;
+      result += `Question:\n${questionText}\n`;
+      
+      // Add image URLs if present
+      if (imageUrls.length > 0) {
+        result += `\nImage URLs:\n${imageUrls.join('\n')}\n`;
+      }
+      
+      result += '\n';
       
       // Get the answer choices
       result += `Group of choices:\n`;
