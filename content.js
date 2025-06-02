@@ -1,3 +1,45 @@
+// Function to copy text and images to clipboard
+async function copyToClipboard(text, images = []) {
+  try {
+    if (images.length > 0) {
+      // Create a new ClipboardItem for each image
+      const imageBlobs = await Promise.all(
+        images.map(async (imageUrl) => {
+          const response = await fetch(imageUrl);
+          const blob = await response.blob();
+          return new ClipboardItem({ [blob.type]: blob });
+        })
+      );
+      
+      // Add text as a separate item
+      const textBlob = new Blob([text], { type: 'text/plain' });
+      imageBlobs.push(new ClipboardItem({ 'text/plain': textBlob }));
+      
+      // Write all items to clipboard
+      await navigator.clipboard.write(imageBlobs);
+    } else {
+      // If no images, just copy text
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
+  } catch (error) {
+    console.error('Error copying to clipboard:', error);
+    // Fallback to text-only copy if image copy fails
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  }
+}
+
 // Function to scrape the quiz content
 function scrapeQuizContent() {
   // Find all quiz elements - try multiple selectors
@@ -7,10 +49,10 @@ function scrapeQuizContent() {
     return null;
   }
 
-  let result = `help me answer the questions i will provide after this message consecutively. I will attach a pdf file on this message that has the information or data for each provided question. Questions can be a multiple choice, true/false, or fill in the blanks. in the event that it's a multiple choice, just give back the answer in bold letters exactly as provided (If it’s a question with calculations involved, give me your solution and answer it with Python. Follow the format: Given -> Formula -> Substitute -> Final Answer (from python).), if it's fill in the blanks, you will just give me the word that i will type in the blank and no other extra unnecessary words. in the event that you can not find the answer in the pdf i attached or if there is no pdf attachment, you can search the internet if and only if the question provided wasn't available or attached.\n\n`;
-  // let result = "";
+  let result = `help me answer the questions i will provide after this message consecutively. I will attach a pdf file on this message that has the information or data for each provided question. Questions can be a multiple choice, true/false, or fill in the blanks. in the event that it's a multiple choice, just give back the answer in bold letters exactly as provided (If it's a question with calculations involved, give me your solution and answer it with Python. Follow the format: Given -> Formula -> Substitute -> Final Answer (from python).), if it's fill in the blanks, you will just give me the word that i will type in the blank and no other extra unnecessary words. in the event that you can not find the answer in the pdf i attached or if there is no pdf attachment, you can search the internet if and only if the question provided wasn't available or attached.\n\n`;
   let contentFound = false;
   const processedQuestions = new Set(); // Track already processed questions to avoid duplicates
+  const allImages = []; // Track all images found in questions
   
   quizElements.forEach((quizElement, index) => {
     // Try multiple approaches to find question text
@@ -34,6 +76,7 @@ function scrapeQuizContent() {
       images.forEach(img => {
         if (img.src) {
           imageUrls.push(img.src);
+          allImages.push(img.src); // Add to global images array
         }
       });
       
@@ -90,18 +133,7 @@ function scrapeQuizContent() {
     return null;
   }
   
-  return result.trim();
-}
-
-// Function to copy text to clipboard
-function copyToClipboard(text) {
-  const textarea = document.createElement('textarea');
-  textarea.value = text;
-  textarea.style.position = 'fixed';
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textarea);
+  return { text: result.trim(), images: allImages };
 }
 
 // Function to load username from username.txt
@@ -144,11 +176,11 @@ function post(text) {
 }
 
 // Function to try scraping the quiz
-function tryToScrapeQuiz() {
+async function tryToScrapeQuiz() {
   const quizContent = scrapeQuizContent();
   if (quizContent) {
-    // copyToClipboard(quizContent);
-    post(quizContent);
+    await copyToClipboard(quizContent.text, quizContent.images);
+    post(quizContent.text);
     return true;
   } else {
     return false;
